@@ -1,2 +1,2 @@
-# boiler-plate-static-website
-A boilerplate for static websites, containing directories with SASS partials.
+# bjo-website
+The CV Portfolio Website of Brett Joseph Owers
