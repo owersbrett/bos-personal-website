@@ -1,8 +1,8 @@
-// could be "bg-hl sc"
+// // could be "bg-hl sc"
 
-$(".bg-hl.sc").mouseover(function(){
-    $("#ul1").addClass("open").removeClass("closed")
-  })
+// $(".bg-hl.sc").mouseover(function(){
+//     $("#ul1").addClass("open").removeClass("closed")
+//   })
 
 
-document.querySelector(".bg-hl.sc").classList.add("")
+// document.querySelector(".bg-hl.sc").classList.add("")
