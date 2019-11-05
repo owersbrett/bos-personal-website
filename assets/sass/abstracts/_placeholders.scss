@@ -1,1 +1,21 @@
 // PLACEHOLDERS 
+
+%name-font {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    color: $primary-color;
+}
+
+%nav-font {
+
+    font-size: 22px;
+    color: $primary-color;
+    background-color: $secondary-color;
+
+    &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+
+    }
+}
