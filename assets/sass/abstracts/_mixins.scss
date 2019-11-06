@@ -1,1 +1,10 @@
 // MIXINS 
+
+@mixin flexBro($ai: flex-start, $fd: column, $jc: center) {
+    display: flex;
+
+    align-items: $ai;
+    flex-direction: $fd;
+    justify-content: $jc;
+
+}

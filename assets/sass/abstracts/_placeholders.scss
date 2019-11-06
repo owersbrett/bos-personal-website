@@ -2,14 +2,18 @@
 
 %name-font {
     text-decoration: none;
-    font-size: 26px;
-    font-weight: 600;
+    
+    font: {
+        size: 26px;
+        weight: 600;
+    }
+    
     color: $primary-color;
 }
 
 %nav-font {
 
-    font-size: 22px;
+    font-size: 18px;
     color: $primary-color;
     background-color: $secondary-color;
 
@@ -18,4 +22,9 @@
         background-color: $primary-color;
 
     }
+}
+
+%card-half {
+    height: $square-length;
+    width: $square-length;
 }

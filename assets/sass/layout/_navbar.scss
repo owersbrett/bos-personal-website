@@ -1,333 +1,65 @@
-// // NAVBAR 
+  // NAVBAR 
 
+nav {
 // Navbar contains my name, as well as education, history, 
 // portfolio, talents, skills and contact anchors
-nav {
   display: flex;
   width: 100vw;
   align-items: center;
 
+  position: fixed;
+  top: 0;
+
   background-color: $secondary-color;
   font-family: $nav-font;
-
-  // My name is in a div, and is not a list item of the unordered list 
-  // because its justify-content value is the default
   >div {
+// My name is in a div, and is not a list item of the unordered list 
+// because its justify-content value is the default
+    margin-left: 27px;
     display: flex;
     width: 100%;
+    height: 100%;
 
-  // I don't want my name to have an underline  
     a {
+// I don't want my name to have an underline  
       @extend %name-font;
-      padding: 0px 0px 0px 22px;
+    
     }
+// ends anchor for my name in top left corner
   }
+// ends >div for my name in top left corner
   
-  // The ul contains the anchor elements of the navbar
   ul {
+// The ul contains the anchor elements of the navbar
     display: flex;
     justify-content: flex-end;
     width: 100%;
   
-  // Each list item has an anchor tag around a div so that user can click
-  // the padding of the div and still be routed to the anchor  
+// Each list item has an anchor tag around a div so that user can click
+// the padding of the div and still be routed to the anchor  
     li {
 
-  // Each anchor tag comes with default text-decoration that I don't want    
+// Each anchor tag comes with default text-decoration that I don't want    
       a {
         text-decoration: none;
-  // Navbar items are spaced 20px apart      
+// Navbar items are spaced 20px apart      
         div {
           padding: 27px;
           
           @extend %nav-font;
           }
+// ends div for nav items
         }
+// ends anchor for nav items
       }
+// ends li
     }
-
-  }
-
+//ends ul
 }
+// ends nav
 
 
 
 
 
 
-//   main {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-    
-//     background-image: url(../imgs/network.jpg);
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     height: 100%;
-  
-//   }
-  
-//   header {
-//     font-family: 'manrope3bold';
-  
-//     display: flex;
-  
-//     width: 100vw;
-//     height: 10vh;
-  
-//     background: #f5f5f5;
-//   }
-  
-//   .navbar {
-//     display: flex;
-//     flex-flow: row nowrap;
-//     justify-content: flex-end;
-  
-//     width: 100vw;
-  
-//     padding: 0px 0px 0px 0px;
-  
-//     color: #010436;
-//   }
-  
-  
-//   .navbar .my-name-nav {
-//     display: flex;
-//     margin-right: auto;
-//     align-self: center;
-  
-//   }
-//   .my-name {
-//     font-family: besley;
-    
-//     font-size: 28px;
-//     letter-spacing: 1px;
-//     font-weight: bold;
-//   }
-  
-//   a {
-//     display: flex;
-//     color: inherit;
-//     text-decoration: none;
-//   }
-  
-//   .navbar-hl{
-//     display: flex;
-//     align-self: center;
-//     list-style-type: none;
-//     padding: 27px;
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-//   }
-  
-//   .navbar-hl-name{
-//     display: flex;
-//     align-self: center;
-//     list-style-type: none;
-//     padding: 22px;
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-//   }
-  
-//   .navbar-hl-name:hover {
-//     color: #f5f5f5;
-//     background-color: #010436;
-//   }
-  
-//   .navbar-hl:hover {
-//     color: #f5f5f5;
-//     background-color: #010436;
-//   }
-  
-  
-//   .profile {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-end;
-//     justify-content: center;
-  
-//     margin: 10vh 0px 0px 0px;
-  
-//   }
-  
-//   .text-container {
-//     display: flex;
-//     flex-direction: row;
-//   }
-  
-//   .my-face img {
-//     display: flex;
-//     width: 55vh;
-//   }
-  
-//   div .my-info{
-//     box-sizing: border-box;
-//     padding: 65px 75px 50px 60px;
-  
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: flex-start;
-    
-//     height: 55vh;
-//     width: 55vh;
-  
-  
-//     color: #010436;
-//     background: #f5f5f5;
-//   }
-  
-  
-//   .contact-info {
-//     list-style-type: none;
-  
-//     margin: 0px;
-//     padding: 0px 0px 0px 0px;
-    
-//     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-//     letter-spacing: 2px;;
-//   }
-  
-//   .contact-info li {
-//     padding: 0px 0px 25px 0px;
-//   }
-  
-//   .my-info h1 {
-//     font-size: 24px;
-//     font-family: manrope3;
-//     font-weight: 350;
-//     letter-spacing: 1px;
-  
-//     margin: 0px 0px 5px 0px;
-//   }
-  
-//   .my-info h3 {
-//     font-size: 16px;
-//     margin: 0px 0px 25px 0px;
-//   }
-  
-//   .index-bottom-half {
-//     display: flex;
-//     justify-content: center;
-//     color: #010436;
-//   }
-  
-//   .social-links-container {
-  
-    
-//     display: flex;
-  
-//     justify-content: space-between;
-  
-  
-  
-//     width: 110vh;
-//     height: 10vh;
-//     align-items: center;
-  
-//     background-color: #010436;
-//   }
-  
-//   .index-bottom-half .social-links {
-//     list-style-type: none;
-  
-//     display: flex;
-  
-//     color: #f5f5f5;
-  
-//     padding: 0px;
-//   }
-  
-  
-  
-  
-//   /* this is where the social links are aligned  */
-//   .social-links {
-//     display: flex;
-//     flex-direction: row;
-  
-//     justify-content: space-around;
-//     align-items: center;
-  
-//     margin: 0;
-  
-//     width: 110vh;
-//     height: 10vh;
-//   }
-  
-//   .bg-hl {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 52px;
-//     height: 52px;
-//     border-radius: 10px;
-//   }
-  
-//   li a {
-//     text-decoration: none;
-//   }
-  
-//   .bh:hover{
-//     background-color: #053eff;
-//     color:white;
-//   }
-  
-//   .gh:hover{
-//     background-color: #333;
-//   }
-//   .li:hover {
-//     background-color: #0077B5;
-//     color: white;
-//   }
-  
-//   .sc:hover {
-//     background-color: #f70;
-//   }
-  
-//   .az:hover {
-//     background-color: white;
-//     color: black;
-//   }
-  
-//   .yt:hover{
-//     background-color: white;
-//     color: #ff0000;
-//   }
-  
-  
-//   .fb:hover {
-//     background-color: #3b5998;
-//   }
-  
-//   div .introduction {
-//     display: flex;
-//     flex-direction: column;
-//   }
-  
-//   .introduction h2 {
-//     margin: 10px 0px;
-  
-//     display: flex;
-//     justify-content: center;
-  
-//     font-family: 'manrope3thin';
-//     font-weight: bold;
-    
-//   }
-  
-  
-//   .social-links a {
-//     color: inherit;
-//   }
-  
-//   .introduction p {
-//     margin: 0px;
-//     line-height: 1.5em;
-  
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//     font-family: Arial, Helvetica, sans-serif;
-//   }
-  
