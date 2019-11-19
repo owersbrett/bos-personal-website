@@ -16,11 +16,55 @@ section#home {
       background-color: $secondary-color;
     }
 
-    >div {
+    >div{
       display: flex;
       padding: 172px 0px 0px 0px;
 
-      >div {
+      >#i-am{
+        box-sizing: border-box;
+        padding: 40px;
+        display: flex;
+        @include flexBro(flex-start, column, center);
+
+        list-style: none;
+
+        // beginning of business card stylings
+
+        h1{
+          font-weight: 800;
+          font-size: 30px;
+          padding: $pad;
+        }
+
+        h3{
+          font-style: italic;
+          font-weight: 400;
+          padding: $pad;
+          font-size: 16px;
+        }
+
+        ul {
+          display: flex;
+          @include flexBro(flex-start, column, center);
+        }
+
+        li {
+          padding: $pad;
+          font-style: italic;
+        }
+
+        #phone-number{
+          padding: 0px;
+        }
+       
+
+        font: {
+          family: $info-font;
+          size: 16px;
+        }
+      }
+
+      >div{
         @include flexBro();
         @extend %card-half;
         

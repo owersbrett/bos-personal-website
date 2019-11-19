@@ -52,27 +52,16 @@ table {
   border-spacing: 0;
 }
 
-nav > div a {
+nav > div a, nav ul li a div {
   text-decoration: none;
   font-size: 26px;
   font-weight: 600;
   color: #010436;
 }
 
-nav ul li a div {
-  font-size: 18px;
-  color: #010436;
-  background-color: #f5f5f5;
-}
-
-nav ul li a div:hover {
-  color: #f5f5f5;
-  background-color: #010436;
-}
-
 section#home > main > div > div, section#home > main > div > div img {
-  height: 432px;
-  width: 432px;
+  height: 365px;
+  width: 365px;
 }
 
 nav {
@@ -114,6 +103,12 @@ nav ul li a {
 
 nav ul li a div {
   padding: 27px;
+  font-size: 20px;
+}
+
+nav ul li a div:hover {
+  background-color: #010436;
+  color: #f5f5f5;
 }
 
 section#home > main {
@@ -139,6 +134,68 @@ section#home > main > div {
   display: -ms-flexbox;
   display: flex;
   padding: 172px 0px 0px 0px;
+}
+
+section#home > main > div > #i-am {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+section#home > main > div > #i-am h1 {
+  font-weight: 800;
+  font-size: 30px;
+  padding: 0px 0px 30px 0px;
+}
+
+section#home > main > div > #i-am h3 {
+  font-style: italic;
+  font-weight: 400;
+  padding: 0px 0px 30px 0px;
+  font-size: 16px;
+}
+
+section#home > main > div > #i-am ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#home > main > div > #i-am li {
+  padding: 0px 0px 30px 0px;
+  font-style: italic;
+}
+
+section#home > main > div > #i-am #phone-number {
+  padding: 0px;
 }
 
 section#home > main > div > div {
@@ -177,7 +234,7 @@ section#home > div ul {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
-  width: 864px;
+  width: 730px;
   background-color: #010436;
 }
 
@@ -238,6 +295,42 @@ section#home > div ul div {
 section#introduction {
   height: 50vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
   background-color: #f5f5f5;
+}
+
+section#introduction h1 {
+  padding: 40px 0px 30px 0px;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 35%;
+}
+
+section#introduction p {
+  width: 42%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+section#introduction p span {
+  margin-left: 5%;
 }
 /*# sourceMappingURL=main.css.map */

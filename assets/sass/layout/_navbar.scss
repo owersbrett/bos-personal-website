@@ -11,7 +11,7 @@ nav {
   top: 0;
 
   background-color: $secondary-color;
-  font-family: $nav-font;
+  font-family: $head-font;
   >div {
 // My name is in a div, and is not a list item of the unordered list 
 // because its justify-content value is the default
@@ -45,8 +45,13 @@ nav {
 // Navbar items are spaced 20px apart      
         div {
           padding: 27px;
-          
-          @extend %nav-font;
+          font-size: 20px;
+          @extend %name-font;
+
+          &:hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+          }
           }
 // ends div for nav items
         }
