@@ -44,8 +44,8 @@ nav {
         text-decoration: none;
 // Navbar items are spaced 20px apart      
         div {
-          padding: 27px;
-          font-size: 20px;
+          padding: $nav-pad;
+          font-size: $nav-font-size;
           @extend %name-font;
 
           &:hover {

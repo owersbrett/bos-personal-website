@@ -33,13 +33,14 @@ section#home {
         h1{
           font-weight: 800;
           font-size: 30px;
-          padding: $pad;
+          padding: 10px 0px 5px 0px;
         }
 
         h3{
           font-style: italic;
           font-weight: 400;
-          padding: $pad;
+          color: $gray-font;
+          padding: 0px 0px 30px 0px;
           font-size: 16px;
         }
 
@@ -49,14 +50,17 @@ section#home {
         }
 
         li {
-          padding: $pad;
-          font-style: italic;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 0px 0px 10px 0px;
         }
 
-        #phone-number{
-          padding: 0px;
+        .bold {
+          font: {
+            weight: 600;
+            style: none;
+          }
         }
-       
 
         font: {
           family: $info-font;

@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin: $content-margin 0px 0px 0px;
+}
+
+ul#card{
+    display: flex;
+    flex-direction: column;
+}
+
+ul .card{
+    display: flex;
+}
+
+.thumbnail{
+    background-image: url()
+    width:547px;
+    height:365px;
+}

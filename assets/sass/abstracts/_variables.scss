@@ -8,10 +8,17 @@ $info-font: "Helvetica Neue", Helvetica, Arial, sans-serif;;
 //colors 
 $primary-color:   #010436;
 $secondary-color: #f5f5f5;
+$gray-font: rgba(0, 0, 0, 0.5);
 
 
 //square size
 
-$square-length: 365px;
+$nav-pad: 21px;
+$nav-font-size: 18px;
 
-$pad: 0px 0px 30px 0px;
+
+$square-length: 400px;
+
+$pad: 0px 0px 15px 0px;
+
+$content-margin: ( 2 * $nav-pad + $nav-font-size);
