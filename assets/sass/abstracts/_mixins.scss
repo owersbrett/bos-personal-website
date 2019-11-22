@@ -8,3 +8,11 @@
     justify-content: $jc;
 
 }
+
+@mixin headerFont($fs: 26px, $fw: 400, $ff:$info-font){
+    font: {
+        size: $fs;
+        weight: $fw;
+        family: $ff;
+    }
+}
