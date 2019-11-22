@@ -325,6 +325,8 @@ section#introduction div img {
   opacity: 0%;
   -webkit-transition: .5s;
   transition: .5s;
+  height: auto;
+  width: 250px;
 }
 
 section#introduction div .array {
