@@ -34,6 +34,8 @@ nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    text-transform: uppercase;
+    
   
 // Each list item has an anchor tag around a div so that user can click
 // the padding of the div and still be routed to the anchor  
@@ -47,6 +49,7 @@ nav {
           padding: $nav-pad;
           font-size: $nav-font-size;
           @extend %name-font;
+          font-weight: 400;
 
           &:hover {
             background-color: $primary-color;
