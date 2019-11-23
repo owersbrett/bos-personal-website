@@ -65,6 +65,7 @@ section#home > main > div > div, section#home > main > div > div img {
 }
 
 nav {
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +350,7 @@ section#introduction h1 {
 
 section#introduction p {
   opacity: 0%;
-  padding: 0px 0px 300px 0px;
+  padding: 0px 0px 240px 0px;
   width: 900px;
   -webkit-transition: 3s;
   transition: 3s;
@@ -364,7 +365,11 @@ section#introduction p span {
   margin-left: 5%;
 }
 
-div#navbar-anchors section {
+section#introduction #education-anchor {
+  height: 64px;
+}
+
+div#navbar-links section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,26 +387,45 @@ div#navbar-anchors section {
   width: 100vw;
 }
 
-div#navbar-anchors section div#header-div {
+div#navbar-links section div#header-div {
   width: 100vw;
 }
 
-div#navbar-anchors section div#header-div h1 {
+div#navbar-links section div#header-div h1 {
   text-align: center;
   padding: 48px 0px;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 3px;
+  color: #010436;
 }
 
-div#navbar-anchors section div#header-div hr {
+div#navbar-links section div#header-div hr {
   margin: 0px;
   border: 1px solid #f5f5f5;
   overflow: hidden;
 }
 
-div#navbar-anchors section #edu {
+div#navbar-links section #edu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  position: relative;
+}
+
+div#navbar-links section .school-courses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,16 +441,28 @@ div#navbar-anchors section #edu {
           justify-content: center;
   width: 100vw;
   position: relative;
+  color: #010436;
 }
 
-div#navbar-anchors section .boating-school {
+div#navbar-links section .school {
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 2px;
   margin: 100px 0px 0px 0px;
   text-align: right;
   width: 50%;
-  padding-right: 50px;
+  padding-right: 42px;
 }
 
-div#navbar-anchors section .dot-vl {
+div#navbar-links section .school span {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+  line-height: 220%;
+}
+
+div#navbar-links section .dot-vl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,18 +471,39 @@ div#navbar-anchors section .dot-vl {
           justify-content: center;
 }
 
-div#navbar-anchors section .dot-vl .dot {
+div#navbar-links section .dot-vl .dot {
   position: absolute;
   height: 7px;
   width: 7px;
   background-color: #010436;
   border-radius: 100%;
-  margin: 105px 0px 0px 0px;
+  margin: 112px 0px 0px 0px;
+  z-index: 2;
 }
 
-div#navbar-anchors section .what-i-learned-in-boating-school-is {
-  margin: 100px 0px 0px 0px;
+div#navbar-links section .dot-vl .vl {
+  position: absolute;
+  z-index: 1;
+  margin: 112px 0px 0px 0px;
+  height: 700px;
+  background-color: #f5f5f5;
+  width: 1px;
+  border: 1px solid #f5f5f5;
+}
+
+div#navbar-links section .what-i-learned-in-boating-school-is {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 103px 0px 0px 0px;
   width: 50%;
-  padding-left: 50px;
+  padding-left: 42px;
+  line-height: 200%;
+}
+
+div#navbar-links section .what-i-learned-in-boating-school-is span {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

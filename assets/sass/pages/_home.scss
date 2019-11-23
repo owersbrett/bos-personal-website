@@ -174,7 +174,7 @@ section#introduction{
   }
   p {
       opacity: 0%;
-      padding: 0px 0px 300px 0px;
+      padding: 0px 0px 240px 0px;
       width: $square-length*2;
       transition: 3s;
       line-height: 37px;
@@ -192,10 +192,15 @@ section#introduction{
   }
   
   background-color: $secondary-color;
+  #education-anchor{
+    height: $nav-font-size + 2 * $nav-pad;
+  }
 }
 
-div#navbar-anchors{
+div#navbar-links{
+
   section{
+    // margin: $nav-pad + $nav-font-size 0px 0px 0px;
     @include flexBro(center);
     background-color: white;
     width: 100vw;
@@ -206,6 +211,7 @@ div#navbar-anchors{
         padding: 2 * $nav-pad 0px;
         @include headerFont();
         letter-spacing: 3px;
+        color: $primary-color;
       }
       hr{
         margin: 0px;
@@ -213,40 +219,77 @@ div#navbar-anchors{
         overflow: hidden;
       }
     } //end of header-div
-
+    
     #edu{
-      @include flexBro(flex-start, row, center);
+      @include flexBro(flex-start, column, center);
       width: 100vw;
       position: relative;
     }
-
-    .boating-school{
+    .school-courses{
+      @include flexBro(flex-start, row, center);
+      width: 100vw;
+      position: relative;
+      color: $primary-color;
+    }
+    
+    .school{
+        font-weight: 200;
+        font-size: 15px;
+        letter-spacing: 2px;
+        span{
+          font-size: 14px;
+          font-weight: 500;
+          font-family: $info-font;
+          letter-spacing: 3px;
+          line-height: 220%;
+      }
+      
+      
       margin: $section-margins;
       text-align: right;
       width: 50%;
-      padding-right: 50px;
+      padding-right: 42px;
     }
     
     .dot-vl{
       display: flex;
       justify-content: center;
-
+      
       .dot{
-
+        
         position: absolute;
         height: 7px;
         width: 7px;
         background-color: $primary-color;
         border-radius: 100%;
-        margin: $vl-margin+5px 0px 0px 0px;
+        margin: $vl-margin+12px 0px 0px 0px;
+        z-index: 2;
+      }
+      .vl{
+        position: absolute;
+        z-index: 1;
+        margin: $vl-margin+12px 0px 0px 0px;
+        height: 700px;
+        background-color: $secondary-color;
+        width: 1px;
+        border: 1px solid $secondary-color
       }
       
     }
     
     .what-i-learned-in-boating-school-is{
-      margin: $section-margins;
+      span{
+        font-size:14px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      font-size:14px;
+      letter-spacing: 1px;
+      margin: $vl-margin+3px 0px 0px 0px;
       width: 50%;
-      padding-left: 50px;
+      padding-left: 42px;
+      line-height: 200%;
     }
 
   }

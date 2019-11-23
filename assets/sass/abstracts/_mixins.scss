@@ -9,7 +9,7 @@
 
 }
 
-@mixin headerFont($fs: 26px, $fw: 400, $ff:$info-font){
+@mixin headerFont($fs: 26px, $fw: 500, $ff:$info-font){
     font: {
         size: $fs;
         weight: $fw;
