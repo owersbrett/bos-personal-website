@@ -145,10 +145,11 @@ section#home {
 }
 // home close
 section#introduction{
+  
 
   div{
       img{
-          padding: 150px 0px 0px 0px;
+          padding: 100px 0px 0px 0px;
           opacity: 0%;
           transition: .5s;
           height: auto;
@@ -302,4 +303,14 @@ div#navbar-links{
 #portfolio{
   height: 250px;
   width: 100%;
+}
+
+#scroll{
+  display: flex;
+  justify-content: center;
+  padding: 75px;
+  img{
+    height:50px;
+    opacity: .1;
+  }
 }

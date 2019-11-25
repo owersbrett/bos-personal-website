@@ -60,8 +60,8 @@ nav > div a, nav ul li a div {
 }
 
 section#home > main > div > div, section#home > main > div > div img {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
 }
 
 nav {
@@ -244,7 +244,7 @@ section#home > div ul {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
-  width: 1000px;
+  width: 900px;
   background-color: #010436;
 }
 
@@ -323,7 +323,7 @@ section#introduction {
 }
 
 section#introduction div img {
-  padding: 150px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   opacity: 0%;
   -webkit-transition: .5s;
   transition: .5s;
@@ -343,7 +343,7 @@ section#introduction h1 {
   font-weight: 700;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  width: 1500px;
+  width: 1350px;
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
@@ -351,7 +351,7 @@ section#introduction h1 {
 section#introduction p {
   opacity: 0%;
   padding: 0px 0px 240px 0px;
-  width: 1000px;
+  width: 900px;
   -webkit-transition: 3s;
   transition: 3s;
   line-height: 37px;
@@ -515,5 +515,20 @@ div#navbar-links #portfolio-anchor {
 #portfolio {
   height: 250px;
   width: 100%;
+}
+
+#scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 75px;
+}
+
+#scroll img {
+  height: 50px;
+  opacity: .1;
 }
 /*# sourceMappingURL=main.css.map */
