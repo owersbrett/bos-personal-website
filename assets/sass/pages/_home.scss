@@ -293,4 +293,13 @@ div#navbar-links{
     }
 
   }
+  #portfolio-anchor{
+    height: $nav-font-size + 2 * $nav-pad;
+    width: 100%;
+  }
+}
+
+#portfolio{
+  height: 250px;
+  width: 100%;
 }
