@@ -324,21 +324,13 @@ section#introduction {
 
 section#introduction div img {
   padding: 100px 0px 0px 0px;
-  opacity: 0%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  opacity: 100%;
   height: auto;
   width: 250px;
 }
 
-section#introduction div .array {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
 section#introduction h1 {
-  opacity: 0%;
-  padding: 0px 0px 75px 0px;
+  padding: 20px 0px 75px 0px;
   font-size: 52px;
   font-weight: 700;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -349,7 +341,6 @@ section#introduction h1 {
 }
 
 section#introduction p {
-  opacity: 0%;
   padding: 0px 0px 240px 0px;
   width: 900px;
   -webkit-transition: 3s;
@@ -530,5 +521,93 @@ div#navbar-links #portfolio-anchor {
 #scroll img {
   height: 50px;
   opacity: .1;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mancala {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gameboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#gameboard h1 {
+  padding: 0px 0px 25px 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+}
+
+#players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#players img {
+  padding: 0px 0px 0px 0px;
+}
+
+#players h2 {
+  padding: 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+#buttons button {
+  margin: 100px;
+  width: 300px;
+  height: 100px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

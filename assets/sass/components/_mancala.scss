@@ -1,0 +1,60 @@
+#mancala {
+    display: flex;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    >div{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+#gameboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    
+    h1{
+        padding: 0px 0px 25px 0px;
+
+        font: {
+            family: $info-font;
+            size: 70px;
+            weight: 800;
+          }
+      }
+}
+
+#players{
+    display: flex;
+    align-items: center;
+    img{
+        padding: 0px 0px 0px 0px;
+    }
+    h2{
+
+        padding: 25px;
+
+        font: {
+            family: $info-font;
+            size: 34px;
+            weight: 600;
+        }
+    }
+}
+
+#buttons {
+    button{
+        margin: 100px;
+        width: 300px;
+        height: 100px;
+        font: {
+            family: $info-font;
+            size: 30px;
+            weight: 600;
+        }
+    }
+}
