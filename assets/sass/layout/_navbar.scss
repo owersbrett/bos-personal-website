@@ -1,58 +1,58 @@
-  // NAVBAR 
-  @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    nav {
-      z-index: 1000;
+// // NAVBAR 
+// @media screen 
+// and (min-device-width: 1200px) 
+// and (max-device-width: 1600px) 
+// and (-webkit-min-device-pixel-ratio: 1) { 
+  nav {
+    z-index: 1000;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+  
+    position: fixed;
+    top: 0;
+  
+    background-color: $secondary-color;
+    font-family: $head-font;
+    >div {
+      margin-left: 27px;
       display: flex;
-      width: 100vw;
-      align-items: center;
-    
-      position: fixed;
-      top: 0;
-    
-      background-color: $secondary-color;
-      font-family: $head-font;
-      >div {
-        margin-left: 27px;
-        display: flex;
-        width: 100%;
-        height: 100%;
-    
-        a {
-          @extend %name-font;
-        }
+      width: 100%;
+      height: 100%;
+  
+      a {
+        @extend %name-font;
       }
-      
-      ul {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        text-transform: uppercase;
-        li {
-          a {
-            text-decoration: none;
-            div {
-              padding: $nav-pad;
-              font-size: $nav-font-size;
-              @extend %name-font;
-              font-weight: 400;
-              &:hover {
-                background-color: $primary-color;
-                color: $secondary-color;
-              }
-              }
+    }
+    
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      text-transform: uppercase;
+      li {
+        a {
+          text-decoration: none;
+          div {
+            padding: $nav-pad;
+            font-size: $nav-font-size;
+            @extend %name-font;
+            font-weight: 400;
+            &:hover {
+              background-color: $primary-color;
+              color: $secondary-color;
+            }
             }
           }
         }
-    }    
-}
+      }
+  }    
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
 
-}
+// @media only screen 
+//   and (min-device-width: 375px) 
+//   and (max-device-width: 667px) 
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (orientation: portrait) { 
+
+// }
