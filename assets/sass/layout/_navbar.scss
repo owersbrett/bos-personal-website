@@ -1,74 +1,58 @@
   // NAVBAR 
-
-nav {
-  z-index: 1000;
-// Navbar contains my name, as well as education, history, 
-// portfolio, talents, skills and contact anchors
-  display: flex;
-  width: 100vw;
-  align-items: center;
-
-  position: fixed;
-  top: 0;
-
-  background-color: $secondary-color;
-  font-family: $head-font;
-  >div {
-// My name is in a div, and is not a list item of the unordered list 
-// because its justify-content value is the default
-    margin-left: 27px;
-    display: flex;
-    width: 100%;
-    height: 100%;
-
-    a {
-// I don't want my name to have an underline  
-      @extend %name-font;
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    nav {
+      z-index: 1000;
+      display: flex;
+      width: 100vw;
+      align-items: center;
     
-    }
-// ends anchor for my name in top left corner
-  }
-// ends >div for my name in top left corner
-  
-  ul {
-// The ul contains the anchor elements of the navbar
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    text-transform: uppercase;
+      position: fixed;
+      top: 0;
     
-  
-// Each list item has an anchor tag around a div so that user can click
-// the padding of the div and still be routed to the anchor  
-    li {
-
-// Each anchor tag comes with default text-decoration that I don't want    
-      a {
-        text-decoration: none;
-// Navbar items are spaced 20px apart      
-        div {
-          padding: $nav-pad;
-          font-size: $nav-font-size;
+      background-color: $secondary-color;
+      font-family: $head-font;
+      >div {
+        margin-left: 27px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    
+        a {
           @extend %name-font;
-          font-weight: 400;
-
-          &:hover {
-            background-color: $primary-color;
-            color: $secondary-color;
-          }
-          }
-// ends div for nav items
         }
-// ends anchor for nav items
       }
-// ends li
-    }
-//ends ul
+      
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        text-transform: uppercase;
+        li {
+          a {
+            text-decoration: none;
+            div {
+              padding: $nav-pad;
+              font-size: $nav-font-size;
+              @extend %name-font;
+              font-weight: 400;
+              &:hover {
+                background-color: $primary-color;
+                color: $secondary-color;
+              }
+              }
+            }
+          }
+        }
+    }    
 }
-// ends nav
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
 
-
-
-
-
+}
