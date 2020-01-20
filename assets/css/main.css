@@ -205,6 +205,14 @@ body {
   background-color: #f5f5f5;
 }
 
+section#home main.bg-img {
+  background-image: url(../imgs/network.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section#home > main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,11 +220,6 @@ section#home > main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../imgs/network.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 section#home > main #social-links-container {
@@ -429,7 +432,7 @@ section#introduction p {
 section#introduction div img {
   padding: 0px 0px 0px 0px;
   opacity: 100%;
-  height: auto;
+  height: 250px;
   width: 250px;
 }
 
@@ -622,8 +625,11 @@ div#navbar-links #portfolio-anchor {
     overflow-y: hidden;
     position: relative;
   }
-  section#home {
-    z-index: 5;
+  section#home main.bg-img {
+    background-clip: border-box;
+  }
+  section#home > main {
+    background-color: #f5f5f5;
   }
   section#home > main > div {
     padding: 0px;
