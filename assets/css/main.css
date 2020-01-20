@@ -21,6 +21,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  overflow-x: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -59,7 +60,7 @@ nav > div a, nav ul li a div {
   color: #010436;
 }
 
-section#home > main > div > div, section#home > main > div > div img {
+#my-picture {
   height: 450px;
   width: 450px;
 }
@@ -77,6 +78,16 @@ nav {
   top: 0;
   background-color: #f5f5f5;
   font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+nav #menu {
+  visibility: hidden;
+  position: absolute;
+}
+
+nav #toggle-menu {
+  visibility: hidden;
+  position: absolute;
 }
 
 nav > div {
@@ -114,6 +125,82 @@ nav ul li a div:hover {
   color: #f5f5f5;
 }
 
+@media screen and (min-width: 300px) and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50px;
+    overflow-y: visible;
+    position: fixed;
+  }
+  nav ul {
+    padding: 50px 0px 0px 0px;
+    overflow-y: visible;
+    z-index: 1505;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: visible;
+  }
+  nav ul li.nav-elements a div {
+    width: 100vw;
+    background-color: #f5f5f5;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+  }
+  nav .nav-elements {
+    bottom: 100px;
+    z-index: 100;
+    visibility: visible;
+  }
+  nav #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    color: #010436;
+    visibility: visible;
+    text-align: center;
+    font-size: 22px;
+    padding: 0px 10px 0px 0px;
+    top: 16px;
+    right: 12px;
+    overflow-y: hidden;
+  }
+  nav div {
+    margin: 0px 0px 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav div #my-name {
+    overflow-y: hidden;
+    font-size: 26px;
+  }
+  nav ul {
+    position: absolute;
+  }
+}
+
 body {
   background-color: #f5f5f5;
 }
@@ -130,6 +217,10 @@ section#home > main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+section#home > main #social-links-container {
+  width: 600px;
 }
 
 section#home > main :nth-child(2) {
@@ -161,6 +252,7 @@ section#home > main > div > #i-am {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 450px;
   list-style: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -243,7 +335,7 @@ section#home > div ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  height: 70px;
   width: 900px;
   background-color: #010436;
 }
@@ -322,8 +414,20 @@ section#introduction {
   background-color: #f5f5f5;
 }
 
+section#introduction p {
+  width: 80vw;
+  -webkit-transition: 3s;
+  transition: 3s;
+  line-height: 37px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 2s;
+  padding: 0px 0px 100px 0px;
+}
+
 section#introduction div img {
-  padding: 100px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   opacity: 100%;
   height: auto;
   width: 250px;
@@ -335,25 +439,9 @@ section#introduction h1 {
   font-weight: 700;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  width: 1350px;
+  width: 100vw;
   -webkit-transition: 1.5s;
   transition: 1.5s;
-}
-
-section#introduction p {
-  padding: 0px 0px 240px 0px;
-  width: 900px;
-  -webkit-transition: 3s;
-  transition: 3s;
-  line-height: 37px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  color: rgba(0, 0, 0, 0.5);
-  line-height: 2s;
-}
-
-section#introduction p span {
-  margin-left: 5%;
 }
 
 section#introduction #education-anchor {
@@ -395,7 +483,6 @@ div#navbar-links section div#header-div h1 {
 div#navbar-links section div#header-div hr {
   margin: 0px;
   border: 1px solid #f5f5f5;
-  overflow: hidden;
 }
 
 div#navbar-links section #edu {
@@ -414,6 +501,11 @@ div#navbar-links section #edu {
           justify-content: center;
   width: 100vw;
   position: relative;
+  right: 100px;
+}
+
+div#navbar-links section #edu:last-child {
+  padding: 0px 0px 100px;
 }
 
 div#navbar-links section .school-courses {
@@ -433,6 +525,7 @@ div#navbar-links section .school-courses {
   width: 100vw;
   position: relative;
   color: #010436;
+  overflow: visible;
 }
 
 div#navbar-links section .school {
@@ -469,14 +562,14 @@ div#navbar-links section .dot-vl .dot {
   background-color: #010436;
   border-radius: 100%;
   margin: 112px 0px 0px 0px;
-  z-index: 2;
+  z-index: 20;
 }
 
 div#navbar-links section .dot-vl .vl {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   margin: 112px 0px 0px 0px;
-  height: 700px;
+  height: 100%;
   background-color: #f5f5f5;
   width: 1px;
   border: 1px solid #f5f5f5;
@@ -521,5 +614,188 @@ div#navbar-links #portfolio-anchor {
 #scroll img {
   height: 50px;
   opacity: .1;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #site-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+  section#home {
+    z-index: 5;
+  }
+  section#home > main > div {
+    padding: 0px;
+  }
+  main #business-card-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
+  main div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main div div {
+    height: 300px;
+    width: 300px;
+  }
+  div {
+    width: 100vw;
+  }
+  #my-picture {
+    width: 275px;
+    height: 275px;
+  }
+  div #scroll {
+    padding: 50px 0px 10px 0px;
+  }
+  section#introduction h1 {
+    font-size: 32px;
+    padding: 0px 0px 20px 0px;
+  }
+  section#introduction p {
+    padding: 0px;
+    font-size: 16px;
+    height: 200px;
+    overflow-y: hidden;
+  }
+  section#introduction span {
+    visibility: hidden;
+  }
+  section#introduction > div > img {
+    padding: 0px;
+  }
+  section#home > main > div #my-picture-frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  section#home > main > div #my-picture-frame {
+    padding: 50px 0px 0px 0px;
+  }
+  section#home > main > div #my-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+  }
+  section#home > main > div #my-info h1 {
+    font-size: 18px;
+    padding: 0px 0px 5px 15px;
+  }
+  section#home > main > div #my-info h3 {
+    font-size: 12px;
+    padding: 0px 0px 15px 15px;
+  }
+  section#home > main > div #my-info ul {
+    padding: 0px 0px 15px 15px;
+  }
+  section#home > main > div #i-am {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 275px;
+    height: 250px;
+    padding: 0px;
+  }
+  div.school-courses {
+    background-color: #f5f5f5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #my-picture {
+    width: 275px;
+    height: 250px;
+  }
+  #scroll {
+    padding: 50px 0px;
+  }
+  .yt, .fb, .sc, .bh {
+    visibility: hidden;
+    position: absolute;
+  }
+  #current-state {
+    width: 100vw;
+    padding: 0px;
+  }
+  #array-frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div#navbar-links section .what-i-learned-in-boating-school-is {
+    margin: 0px 0px 25px 0px;
+    padding: 0px;
+    width: 80%;
+  }
+  div#navbar-links section .what-i-learned-in-boating-school-is span {
+    font-size: 12px;
+  }
+  div#navbar-links section #edu {
+    right: 0px;
+  }
+  div#navbar-links section #edu:last-child {
+    padding: 0px;
+    background-color: #f5f5f5;
+  }
+  div#navbar-links section .school-courses {
+    border-bottom: thin solid rgba(1, 4, 54, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div#navbar-links section .school-courses .school {
+    text-align: left;
+    padding: 0px;
+    font-size: 16px;
+    margin: 20px 0px 10px 0px;
+    width: 80%;
+  }
+  div#navbar-links section .school-courses .school span {
+    font-size: 20px;
+  }
+  div#navbar-links section .dot-vl {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */
