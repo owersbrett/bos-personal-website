@@ -4,6 +4,15 @@
 // and (max-device-width: 1600px) 
 // and (-webkit-min-device-pixel-ratio: 1) { 
   nav {
+    #menu {
+      visibility: hidden;
+      position: absolute;
+    }
+    #toggle-menu{
+      visibility: hidden;
+      position: absolute;
+    }
+
     z-index: 1000;
     display: flex;
     width: 100vw;
@@ -49,10 +58,74 @@
   }    
 
 
-// @media only screen 
-//   and (min-device-width: 375px) 
-//   and (max-device-width: 667px) 
-//   and (-webkit-min-device-pixel-ratio: 2)
-//   and (orientation: portrait) { 
+@media screen 
+  and (min-width: 300px) 
+  and (max-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
 
-// }
+    
+    
+      
+    nav{
+      display: flex;
+      flex-direction: column;
+      height: 50px;
+      overflow-y: visible;
+      position: fixed;
+      ul{
+        padding: 50px 0px 0px 0px;
+        overflow-y: visible;
+        z-index: 1505;
+        li.nav-elements{
+
+          // padding: 50px 0px 0px 0px;
+          a{
+            div{
+              width: 100vw;
+              background-color: $secondary-color;
+              height: 50px;
+              margin: 0px;
+              padding: 0px;
+            }
+          }
+        }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: visible;
+      }
+      .nav-elements{
+        bottom: 100px;
+        z-index: 100;
+        visibility: visible;
+      }
+      #menu {
+        display: flex;
+        position: fixed;
+        color: $primary-color;
+        visibility: visible;
+        text-align: center;
+        font-size: 22px;
+        padding: 0px 10px 0px 0px;
+        top: 16px;
+        right: 12px;
+        overflow-y: hidden;
+      }
+      div{
+        margin: 0px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #my-name{
+          overflow-y: hidden;
+          font-size: 26px;
+        }
+      }
+      ul{
+        // visibility: hidden;
+        position: absolute;
+        // display: block;
+      }
+    }
+
+}
