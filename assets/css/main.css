@@ -210,7 +210,7 @@ section#home main.bg-img {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 section#home > main {
@@ -626,7 +626,8 @@ div#navbar-links #portfolio-anchor {
     position: relative;
   }
   section#home main.bg-img {
-    background-clip: border-box;
+    background-image: url(../imgs/system-vert.jpg);
+    background-size: cover;
   }
   section#home > main {
     background-color: #f5f5f5;

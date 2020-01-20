@@ -6,7 +6,7 @@ section#home {
       attachment: fixed;
       position: center;
       repeat: no-repeat;
-      size: cover;
+      size: contain;
     } 
 
   }
@@ -346,7 +346,8 @@ div#navbar-links{
     }
     section#home {
       main.bg-img{
-        background-clip: border-box;
+        background-image: (url(../imgs/system-vert.jpg));
+        background-size: cover;
       }
 
     }
