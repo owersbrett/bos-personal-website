@@ -1,5 +1,17 @@
 // // HOME
 section#home {
+
+  #social-links-container{
+    li{
+      a{
+        div{
+          height: 70px;
+          width: 70px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
   main.bg-img{
     background: {
       image: url(../imgs/network.jpg);
@@ -17,7 +29,7 @@ section#home {
     
     #social-links-container{
       width: 600px;
-
+      
     }
 
     :nth-child(2){
