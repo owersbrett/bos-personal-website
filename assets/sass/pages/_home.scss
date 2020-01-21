@@ -6,7 +6,8 @@ section#home {
       attachment: fixed;
       position: center;
       repeat: no-repeat;
-      size: contain;
+      // size: contain;
+      width: 100vw;
     } 
 
   }
@@ -332,7 +333,15 @@ div#navbar-links{
   }
 }
 
-
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+    section#home main.bg-img{
+      background-repeat: repeat;
+    }
+   
+  }
 
 @media only screen 
   and (min-device-width: 300px) 
@@ -442,11 +451,11 @@ div#navbar-links{
       width: 250px;
       h1{
         font-size: 18px;
-        padding: 0px 0px 5px 15px;
+        padding: 0px 0px 6px 15px;
       }
       h3{
         font-size: 12px;
-        padding: 0px 0px 15px 15px;
+        padding: 0px 0px 12px 15px;
       }
       ul{
         padding: 0px 0px 15px 15px;
@@ -469,6 +478,7 @@ div#navbar-links{
     }
     div.school-courses{
       background-color: $secondary-color;
+
       .school{
 
       }
@@ -520,14 +530,19 @@ div#navbar-links{
         
         display: flex;
         .school{
+          .what-i-learned-in-boating-school-is{
+            
+          }
           span{
-            font-size: 20px;
+            font-size: 14px;
           }
 
           text-align: left;
           padding: 0px;
-          font-size: 16px;
-          margin: 20px 0px 10px 0px;
+          font-weight: 600;
+          font-size: 18px;
+          margin: 20px 0px 3px 0px;
+          line-height: 26px;
           width: 80%;
         }
 
