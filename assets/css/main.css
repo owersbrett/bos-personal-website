@@ -565,6 +565,10 @@ div#navbar-links section #edu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -572,12 +576,12 @@ div#navbar-links section #edu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100vw;
   position: relative;
-  right: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div#navbar-links section #edu:last-child {
@@ -613,6 +617,7 @@ div#navbar-links section .school {
   text-align: right;
   width: 50%;
   padding-right: 42px;
+  width: 200px;
 }
 
 div#navbar-links section .school span {

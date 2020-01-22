@@ -253,10 +253,13 @@ div#navbar-links{
     } //end of header-div
     
     #edu{
+      display: flex;
+      justify-content: center;
       @include flexBro(flex-start, column, center);
       width: 100vw;
       position: relative;
-      right: 300px;
+      align-items: center;
+      // right: 300px;
 
     }
     #edu:last-child{
@@ -291,6 +294,7 @@ div#navbar-links{
       text-align: right;
       width: 50%;
       padding-right: 42px;
+      width: 200px
     }
     
     .dot-vl{
