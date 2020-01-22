@@ -92,7 +92,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: #f5f5f5;
-  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 nav > div {
@@ -122,7 +122,8 @@ nav ul li a {
 nav ul li a div {
   padding: 24px;
   font-size: 16px;
-  font-weight: 400;
+  letter-spacing: .5px;
+  font-weight: 500;
 }
 
 nav ul li a div:hover {
@@ -249,6 +250,24 @@ nav ul li a div:hover {
   }
 }
 
+div#navbar-links section .what-i-learned-in-boating-school-is, div#navbar-links section .school {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#navbar-links section span {
+  color: #010436;
+  opacity: 75%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+div.school {
+  font-weight: 600;
+}
+
 body {
   background-color: #f5f5f5;
 }
@@ -324,8 +343,8 @@ section#home > main > div > #i-am h1 {
 section#home > main > div > #i-am h3 {
   font-style: italic;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-  padding: 0px 0px 30px 0px;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0px 0px 20px 0px;
   font-size: 16px;
 }
 
@@ -472,13 +491,13 @@ section#introduction {
 }
 
 section#introduction p {
-  width: 80vw;
+  width: 60vw;
   -webkit-transition: 3s;
   transition: 3s;
   line-height: 37px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
   line-height: 2s;
   padding: 0px 0px 100px 0px;
 }
@@ -558,11 +577,11 @@ div#navbar-links section #edu {
           justify-content: center;
   width: 100vw;
   position: relative;
-  right: 100px;
+  right: 300px;
 }
 
 div#navbar-links section #edu:last-child {
-  padding: 0px 0px 100px;
+  padding: 0px 0px 100px 0px;
 }
 
 div#navbar-links section .school-courses {
@@ -586,9 +605,10 @@ div#navbar-links section .school-courses {
 }
 
 div#navbar-links section .school {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 15px;
   letter-spacing: 2px;
+  height: 50px;
   margin: 100px 0px 0px 0px;
   text-align: right;
   width: 50%;
@@ -596,6 +616,7 @@ div#navbar-links section .school {
 }
 
 div#navbar-links section .school span {
+  opacity: 100;
   font-size: 14px;
   font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -636,7 +657,7 @@ div#navbar-links section .what-i-learned-in-boating-school-is {
   font-size: 14px;
   letter-spacing: 1px;
   margin: 103px 0px 0px 0px;
-  width: 50%;
+  width: 30%;
   padding-left: 42px;
   line-height: 200%;
 }
@@ -676,6 +697,9 @@ div#navbar-links #portfolio-anchor {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   section#home main.bg-img {
     background-repeat: repeat;
+  }
+  section#education div.school-courses {
+    position: relative;
   }
 }
 
@@ -732,6 +756,7 @@ div#navbar-links #portfolio-anchor {
     padding: 0px 0px 20px 0px;
   }
   section#introduction p {
+    width: 78vw;
     padding: 0px;
     font-size: 16px;
     height: 200px;
@@ -773,14 +798,14 @@ div#navbar-links #portfolio-anchor {
   }
   section#home > main > div #my-info h1 {
     font-size: 18px;
-    padding: 0px 0px 6px 15px;
+    padding: 0px 0px 7px 15px;
   }
   section#home > main > div #my-info h3 {
     font-size: 12px;
     padding: 0px 0px 12px 15px;
   }
   section#home > main > div #my-info ul {
-    padding: 0px 0px 15px 15px;
+    padding: 0px 0px 0px 15px;
   }
   section#home > main > div #i-am {
     display: -webkit-box;
@@ -793,6 +818,9 @@ div#navbar-links #portfolio-anchor {
     height: 250px;
     padding: 0px;
   }
+  section#home > main > div .array {
+    width: 50vw;
+  }
   div.school-courses {
     background-color: #f5f5f5;
     -webkit-box-orient: vertical;
@@ -802,7 +830,7 @@ div#navbar-links #portfolio-anchor {
   }
   #my-picture {
     width: 275px;
-    height: 250px;
+    height: 275px;
   }
   #scroll {
     padding: 50px 0px;
@@ -831,8 +859,9 @@ div#navbar-links #portfolio-anchor {
   div#navbar-links section .what-i-learned-in-boating-school-is span {
     font-size: 12px;
   }
-  div#navbar-links section #edu {
-    right: 0px;
+  div#navbar-links section .what-i-learned-in-boating-school-is #edu {
+    position: relative;
+    right: 500px;
   }
   div#navbar-links section #edu:last-child {
     padding: 0px;
@@ -852,11 +881,12 @@ div#navbar-links #portfolio-anchor {
             align-items: center;
   }
   div#navbar-links section .school-courses .school {
+    height: 58px;
     text-align: left;
     padding: 0px;
     font-weight: 600;
     font-size: 18px;
-    margin: 20px 0px 3px 0px;
+    margin: 20px 0px 0px 0px;
     line-height: 26px;
     width: 80%;
   }

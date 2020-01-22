@@ -50,7 +50,8 @@
             padding: $nav-pad;
             font-size: $nav-font-size;
             @extend %name-font;
-            font-weight: 400;
+            letter-spacing: .5px;
+            font-weight: 500;
             &:hover {
               background-color: $primary-color;
               color: $secondary-color;
@@ -80,6 +81,7 @@
       top: 17px;
       .nav-elements{
         position: fixed;
+        
       }
     }
     // #menu{
