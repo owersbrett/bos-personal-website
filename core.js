@@ -1,7 +1,9 @@
 
 
+if (document.getElementById("toggle-menu") !== null){
+    document.getElementById("toggle-menu").addEventListener("click", toggleClasses);
 
-document.getElementById("toggle-menu").addEventListener("click", toggleClasses);
+}
 
 document.querySelectorAll(".nav-elements").forEach(function(element){
     element.addEventListener("touchstart", toggleColor);
